@@ -1,13 +1,24 @@
 .post {
-    background-color: #fff;
+    background-color: #818181;
     padding: 16px;
-    box-shadow: 1px 2px 6px #333;
+    box-shadow: 0px 2px 8px #333;
     border-radius: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+    box-shadow: 0px 4px 12px rgba(51, 51, 51, 0.3);
 }
 
 .post-image {
     max-width: 100%;
     display: block;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.zoomed {
+    transform: scale(1.5);
 }
 
 .post-text,
@@ -19,7 +30,7 @@
 }
 
 .post-comments {
-    
+    margin: 10px 0;
 }
 
 .post-comment {
@@ -30,7 +41,13 @@
     padding: 8px 16px;
     border-radius: 8px;
     margin-bottom: 8px;
+    transition: background-color 0.3s ease;
 }
+
+.post-comment:hover {
+    background-color: #fffbcc;
+}
+
 
 .post-comment-content {
     font-style: italic;
@@ -47,7 +64,16 @@
     width: 100%;
     margin-bottom: 8px;
     padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
 }
+
+.post-comments-form-textarea:focus {
+    border-color: #27ae60;
+    outline: none;
+}
+
 
 .post-comments-form-button {
     padding: 8px 16px;
@@ -57,4 +83,5 @@
     background-color: #27ae60;
     color: #eee;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }

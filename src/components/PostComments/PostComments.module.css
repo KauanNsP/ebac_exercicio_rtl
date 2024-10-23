@@ -5,10 +5,6 @@
     margin-bottom: 24px;
 }
 
-.post-comments {
-    
-}
-
 .post-comment {
     color: #444;
     font-size: 12px;
@@ -44,4 +40,9 @@
     background-color: #27ae60;
     color: #eee;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-comments-form-button:hover {
+    background-color: #000000;
 }
